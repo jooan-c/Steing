@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import React ,{useState}from 'react'
 function App() {
 
@@ -9,9 +8,10 @@ const [arr,setArr]=useState(null)
   {
     let arr = [];
     setData(val.target.value)
-    for (let i = 0; i < val.targe.value; i++) {
+    for (let i = 0; i < val.target.value; i++) {
       arr.push("h ")
     }
+    setArr(arr)
   }
   return (
     <div className="App">
